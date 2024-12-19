@@ -12,7 +12,7 @@ void main()
 int ur_strcat(char D[],char S[])
 {
 	int i=0;
-	int j=0;
+	int  j=0;
 	while(D[i]!='\0')
 	{
 		i++;

@@ -1,58 +1,24 @@
 /*#include<stdio.h>
 
-void ur_strcmp(char str[],char str1[]);
+int ur_strcmp(char [],char []);
 
-void main()
+int main()
 {
-	char string[]="Hello";
-	char string1[]="Bello";
-	//ur_strcmp(str,str1);
-	int i=0;
-	int j=0;
-	while(string[i]!='\0' || string1[j]!='\0')
-	{
-		if(string[i]!=string1[j])
-		{
-
-			break;
-		}
-		i++;
-		j++; 
-
-		
-	}
-	if(string==string1)
-	{
-		printf("strings are equal");
-	}
-	else
-	{
-		printf("strings are not equal:");
-	}
+	int z;
+	char str1[]="Hello";
+	char str2[]="Bello";
+	z=ur_strcmp(str1,str2);
+	
 }
-void ur_strcmp(char string[],char string1[])
+
+int ur_strcmp(char s1[],char s2[])
 {
 	int i=0;
-	int j=0;
-	while(string[i]!='\0' || string1[j]!='\0')
+	
+	while(s1[i]==s2[i] && s1[i]!='\0'&& s2[i]!='\0')
 	{
-		if(string[i]!=string1[j])
-		{
-
-			break;
-		}
 		i++;
-		j++; 
-
 		
 	}
-	if(string==string1)
-	{
-		printf("strings are equal");
-	}
-	else
-	{
-		printf("strings are not equal:");
-	}
-}
-*/
+	return (((s1[i]-s2[i])?1:0));
+}*/
